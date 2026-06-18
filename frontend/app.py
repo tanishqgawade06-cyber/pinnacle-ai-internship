@@ -14,7 +14,7 @@ if st.button("Analyze & Fix Text"):
     if "[MASK]" in user_text:
         with st.spinner("AI is thinking..."):
             # 4. Send the text to your FastAPI backend
-            api_url = "http://127.0.0.1:8000/predict"
+            api_url = "https://pinnacle-ai-internship.onrender.com/predict"
             payload = {"sentence": user_text}
             
             try:
